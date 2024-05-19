@@ -1,0 +1,26 @@
+[
+  {
+    "stepIndex": 0,
+    "label": "Initial Setup",
+    "description": "The initial setup of the props in the sequence",
+    "appliedActions": [],
+    "allowedActions": [],
+    "resultingStates": null
+  },
+  {
+    "stepIndex": 1,
+    "label": "Action Step 1",
+    "description": "The next step in the sequence",
+    "appliedActions": [],
+    "allowedActions": [],
+    "resultingStates": null
+  },
+  {
+    "stepIndex": 2,
+    "label": "Action Step 2",
+    "description": "The next step in the sequence",
+    "appliedActions": [],
+    "allowedActions": [],
+    "resultingStates": null
+  }
+]
