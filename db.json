@@ -1,29 +1,78 @@
 {
-    "actionSteps": [
-      {
-        "stepIndex": 0,
-        "label": "Initial Setup",
-        "description": "The initial setup of the props in the sequence",
-        "appliedActions": [],
-        "allowedActions": [],
-        "resultingStates": null
-      },
-      {
-        "stepIndex": 1,
-        "label": "Action Step 1",
-        "description": "The next step in the sequence",
-        "appliedActions": [],
-        "allowedActions": [],
-        "resultingStates": null
-      },
-      {
-        "stepIndex": 2,
-        "label": "Action Step 2",
-        "description": "The next step in the sequence",
-        "appliedActions": [],
-        "allowedActions": [],
-        "resultingStates": null
-      }
-    ]
-  }
-  
+  "sequences": [
+    {
+      "id": 1,
+      "name": "Sequence 1",
+      "description": "The first sequence",
+      "createdAt": "2022-01-01T00:00:00.000Z",
+      "createdBy": "Snjesko",
+      "updatedAt": "2022-05-01T11:11:11.000Z",
+      "isImmutable": false,
+      "isModified": false,
+      "category": "category1",
+      "tags": ["tag1", "tag2"],
+      "actionSteps": [
+        {
+          "stepIndex": 0,
+          "relativeOffset": 0,
+          "duration": 0,
+          "label": "Initial Setup",
+          "description": "The initial setup of the props in the sequence",
+          "appliedActions": [
+            {
+              "type": "sort",
+              "actionClass": "RankSortAction",
+              "targetId": "123",
+              "params": {
+                "prop": "prop1",
+                "value": "value1"
+              }
+            }
+          ],
+          "allowedActions": [],
+          "resultingStates": null
+        },
+        {
+          "stepIndex": 1,
+          "relativeOffset": 0,
+          "duration": 3000,
+          "label": "Action Step 1",
+          "description": "The next step in the sequence",
+          "appliedActions": [
+            {
+              "type": "sort",
+              "actionClass": "SuitSortAction",
+              "targetId": "123",
+              "params": {
+                "prop": "prop1",
+                "value": "value1"
+              },
+              "relativeOffset": 0,
+              "duration": 1000
+            },
+            {
+              "type": "shuffle",
+              "actionClass": "PerfectRiffleShuffleAction",
+              "targetId": "123",
+              "params": {},
+              "relativeOffset": 0,
+              "duration": 2000
+            }
+          ],
+          "allowedActions": [],
+          "resultingStates": null
+        },
+        {
+          "stepIndex": 2,
+          "relativeOffset": 1000,
+          "label": "Action Step 2",
+          "description": "The next step in the sequence",
+          "appliedActions": [],
+          "allowedActions": [],
+          "resultingStates": null
+        }
+      ],
+      "props": {}
+    }
+  ]
+}
